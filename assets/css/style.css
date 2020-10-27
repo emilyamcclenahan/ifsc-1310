@@ -27,6 +27,7 @@ nav li{
   padding:20px;
   margin:0;
   text-align:center;
+  color:white;
 }
 
 nav ul{
@@ -36,18 +37,16 @@ nav ul{
   background-color:#f6a502;
   font-size:1rem;
   text-decoration:none;
-  box-shadow:0 8px 16px rgba(0,0,0,.4);
   margin:0;
-  padding:20px;
+  padding:5px;
 }
   
 nav a:link, nav a:visited{
   color:white;
   text-decoration:none;
   background-color:#EBD213;
-  background-color: #EBD213(235,210,19,.4);
-  padding: 8px 16px;
   border-radius: 20px;
+  padding: 8px 16px;
   transition:.6s;
 }
 
