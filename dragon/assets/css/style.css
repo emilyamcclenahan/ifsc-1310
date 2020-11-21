@@ -1,0 +1,343 @@
+/* Color Theme  
+273273 - Base
+6A7EA6
+9AAFD
+260C0C
+0D0D0D
+*/
+
+/* ---------------Box Sizing----------------- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ----- Utility Styles ---- */
+
+.container {
+  width: 80vw;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.img-right {
+  float: right;
+  margin: 10px 0 10px 20px;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-left {
+  float: left;
+  margin: 10px 20px 10px 0;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+.img-center {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #c0c0c0;
+  padding: 5px;
+}
+
+/* ---- Responsive Images ----*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ----- Global Styles ---- */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+}
+
+/* ------ Header ------- */
+
+header.primary {
+  background-color: #273273;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  /* Shorhand T,R,B,L*/
+  padding: 6em 2em;
+  position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background-image: url("https://www.teslarati.com/wp-content/uploads/2019/09/Crew-Dragon-DM-1-orbit-tall-pano-SpaceX-crop-3.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url("https://assets.codepen.io/7248/logo-2.png");
+  display: block;
+  width: 450px;
+  height: 70px;
+  margin: 0 auto;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header.primary h2 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+  /* Shorhand Three Value Top, Left/Right, Bottom*/
+  margin: 20px auto 40px;
+  position: relative;
+}
+
+header.primary nav ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+  max-width: 900px;
+  margin: auto auto;
+}
+
+header.primary nav li {
+  list-style-type:none;
+  padding:10px;
+  margin:0;
+}
+
+header.primary nav a:link,
+header.primary nav a:visited {
+  color: white;
+  text-decoration: none;
+  background-color: #000000;
+  background-color: rgba(0,0,0,.4);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.6s;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active {
+  background-color: rgba(51, 83, 107, 0.8);
+}
+
+/* ------------- Content --------------- */
+
+section#content {
+  padding: 4em 0;
+}
+
+section#content h3{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  color: #33536b;
+  border-bottom: 1px solid #c0c0c0;
+}
+
+section#content table{
+  width:100%;
+  border: 1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+
+section#content caption{
+  font-weight:bold;
+  font-size:1.5rem;
+  margin:10px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+  color: #33536b;
+}
+
+section#content th {
+  background:#181C1F;
+  color:#ffffff;
+  text-align:left;
+  padding:10px;
+}
+
+section#content td{
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+section#content tr:nth-child(even){
+  background:#DCDCDC;
+}
+
+section#content tr:hover{
+  background:#273273;
+}
+
+/* ------------- Articles --------------- */
+
+section#articles {
+  background: #260c0c;
+}
+
+section#articles .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #c0c0c0;
+  padding: 0 0 2em 0;
+  margin: 0 auto;
+}
+
+section#articles h2,
+#content h2 {
+  flex: 0 0 100%;
+  color: #6a7ea6;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+}
+
+section#articles h3 {
+  color: #0D0D0D;
+  text-align: center;
+  font-size: 2em;
+}
+
+#articles article.post {
+  width: 30%;
+  padding: 10px;
+  transition: 0.6s;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#articles ul {
+  padding: 0 20px;
+}
+
+
+/* ------------- Aside --------------- */
+
+aside[role="complementary"] {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 1px;
+  margin: 0 auto;
+}
+
+aside .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+table{
+  border: 1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+
+th{
+  background-color: #273273;
+  color:#ffffff;
+  text-align: center;
+  padding: 5px;
+}
+
+td{
+  border: 1px solid #c0c0c0;
+  padding: 1px;
+  text-align:center;
+}
+
+tr:hover{
+  background-color: #1b2c38;
+}
+
+
+/*------ Footer ------*/
+
+footer#colophon {
+  background-color: #273273;
+}
+
+#colophon h6 {
+  padding: 20px;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: #fff;
+}
+
+#colophon figure{
+  text-align: center;
+}
+
+
+/* ---------------Media Queries----------------- */
+
+@media screen and (max-width: 600px) {
+  header.primary nav ul {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 400px;
+  }
+
+  header.primary nav ul li {
+    margin-bottom: 10px;
+    width: 400px;
+  }
+
+  header.primary nav ul li a {
+    display: block;
+  }
+
+  section#articles .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+  }
+
+  #articles article.post {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+  
+  aside .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+  
+  aside article.widget {
+  width: 100%;
+}
+  
+}
