@@ -1,7 +1,6 @@
 body{
   font-family: 'Chilanka', cursive;
   margin:0;
-  color:;
 }
 
 h1{
@@ -19,6 +18,52 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 }
 
-h2{
-  color:#F6A502;
+#intro h2{
+  margin:20px;
+  font-size:2rem;
+  color:#F6A502
+  }
+  
+  #intro p{
+    margin:20px;
+    font-size:1rem;
+    color:#F6A502;
+  }
+  
+  h3{
+    text-align:center;
+    margin:0px;
+    font-size:1.5rem;
+    color:#F6A502;
+  }
+  
+  nav li{
+  list-style-type:none;
+  padding:20px;
+  margin:0;
+  color:white;
+  text-align:center;
+  }
+  
+  nav ul{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  font-size:1rem;
+  text-decoration:none;
+  margin:0;
+  padding:5px;
+  }
+  
+  nav a:link, nav a:visited{
+  color:white;
+  text-decoration:none;
+  background-color:#EBD213;
+  border-radius: 20px;
+  padding: 8px 16px;
+  transition:.6s;
+}
+
+nav a:hover, nav a:active{
+  background-color:#BED6FF;
 }
